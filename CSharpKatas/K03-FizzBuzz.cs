@@ -8,15 +8,12 @@ namespace CSharpKatas
     {
         public string MapNumber(int i)
         {
-            // todo #1: Remove the Ignore attribute, implement FizzBuzz (http://en.wikipedia.org/wiki/Bizz_buzz) for a single input
-            return null;
+            return (i % 3 == 0 && i % 5 == 0) ? "Fizz Buzz" : ((i % 3 == 0) ? "Fizz" : (i % 5 == 0) ? "Buzz" : i.ToString());
         }
 
         public IEnumerable<string> DoFizzBuzzUpTo(int n)
         {
-            // todo #2: implement a FizzBuzz generator without using any foreach or any if statements
-            // todo #3: Refactor to use a "Method Group"
-            return null;
+            return Enumerable.Range(1, n).Select(x => MapNumber(x));
         }
     }
 
