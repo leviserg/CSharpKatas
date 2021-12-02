@@ -17,7 +17,7 @@ namespace CSharpKatas
 
             //int sum = (2*start + decr*(count-1))*count/2;
 
-            int sum = (start + count - 1) * count / 2;
+            int sum = (2*start + count - 1) * count / 2;
 
             //IEnumerable<int> arr = Enumerable.Range(start, count);//.Select(x => x++);
             //int sum = (count == 0) ? 0 : arr.Aggregate((x, y) => x + y);
