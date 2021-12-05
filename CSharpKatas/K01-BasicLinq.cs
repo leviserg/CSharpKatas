@@ -15,12 +15,21 @@ namespace CSharpKatas
 
             int decr = 1;
 
-            //int sum = (2*start + decr*(count-1))*count/2;
+            int sum = (2*start + decr*(count-1))*count/2;
 
-            int sum = (start + count - 1) * count / 2;
+            //int sum = (2*start + count - 1) * count / 2; // or with decrement = 1 
 
-            //IEnumerable<int> arr = Enumerable.Range(start, count);//.Select(x => x++);
+            //IEnumerable<int> arr = Enumerable.Range(start, count);
             //int sum = (count == 0) ? 0 : arr.Aggregate((x, y) => x + y);
+
+            /*
+            List<int> numbers = new List<int> { 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            int EvenSum = numbers.Where(n => n % 2 == 0).Sum();
+            int OddSum = (from num in numbers where num % 2 != 0 select num).Sum();
+            */
+
+
             return sum;
         }
     }
